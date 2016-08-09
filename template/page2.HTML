@@ -1,0 +1,46 @@
+
+<div>
+    	<center> <h1> BILL </h1><br><br>
+
+	<table width="25%">
+                <tr>
+			<td>NAME</td>
+			<td>AMOUNT</td>
+			<td>QUANTITY</td>
+			<td>TOTAL</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr ng-repeat="x in new ">
+			<td>{{ x.Name }}</td>
+			<td>{{ x.amount+"/kg"}}</td>
+			<td>{{ x.count+"kg" }}</td>
+			<td>{{(x.amount)*(x.count)}}</td>
+	   	</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>Grand Total</td>
+			<td></td>
+			<td id="d"></td>
+		</tr>
+		
+	</table><br><br>
+        <input type="button" value="PROCEED" ng-click="go()" />
+     	</center>
+</div>

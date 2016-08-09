@@ -1,0 +1,28 @@
+<p>Search:<input type="text" ng-model="test"></p>
+
+<table width="25%">
+	<tr>
+		<td>NAME</td>
+		<td>AMOUNT</td>
+		<td></td>
+		<td>COUNT</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+ 	<tr ng-repeat="x in names | filter:test">
+   		<td>{{ x.Name }}</td>
+    		<td>{{ (x.amount)+"/kg" }}</td>
+    		<td>
+    		<button ng-click="x.count = x.count - 1">-</button>
+   		<button ng-click="x.count = (x.count + 1)" >+</button></td> 
+    		<td>{{ x.count+"kg"}}</td>
+	</tr>
+</table> 
+
+<br><br>
+<a href="#/page2">go</a>
+/*<button ng-click="clicked()">Go</button>   */
